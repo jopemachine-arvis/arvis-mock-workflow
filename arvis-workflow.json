@@ -53,6 +53,78 @@
                     ]
                 }
             ]
+        },
+        {
+            "type": "scriptfilter",
+            "command": "scriptFilterOverlay",
+            "title": "Test 3 - scriptfilter + scriptfilter",
+            "script_filter": "node scriptfilter.js {query}",
+            "running_subtext": "Searching...",
+            "withspace": true,
+            "arg_type": "optional",
+            "action": [
+                {
+                    "type": "scriptfilter",
+                    "arg": "{query}",
+                    "script_filter": "node scriptfilter.js {query}",
+                    "running_subtext": "Searching...",
+                    "withspace": true,
+                    "action": [
+                        {
+                            "type": "scriptfilter",
+                            "arg": "{query}",
+                            "script_filter": "node scriptfilter.js {query}",
+                            "running_subtext": "Searching...",
+                            "withspace": true,
+                            "action": [
+                                {
+                                    "modifiers": "normal",
+                                    "type": "script",
+                                    "script": "node createFile.js"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "keyword",
+            "command": "multiple",
+            "subtitle": "",
+            "withspace": false,
+            "arg_type": "no",
+            "action": [
+                {
+                    "modifiers": "normal",
+                    "type": "script",
+                    "script": "node createFile.js 'abc'",
+                    "action": [
+                        {
+                            "modifiers": "normal",
+                            "type": "notification",
+                            "title": "File created"
+                        },
+                        {
+                            "modifiers": "normal",
+                            "type": "open",
+                            "target": "https://www.google.co.kr/"
+                        }
+                    ]
+                },
+                {
+                    "modifiers": "normal",
+                    "type": "clipboard",
+                    "text": "def",
+                    "action": [
+                        {
+                            "modifiers": "normal",
+                            "type": "notification",
+                            "title": "Clipboard copied"
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }
