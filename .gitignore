@@ -1,5 +1,6 @@
 createFile.out
 .DS_Store
+workflow-schema.json
 
 # Logs
 logs

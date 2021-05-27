@@ -1,5 +1,5 @@
 {
-    "$schema": "some_schema_file_path",
+    "$schema": "./workflow-schema.json",
     "createdby": "jopemachine",
     "name": "mock-workflow",
     "enabled": true,
@@ -91,6 +91,7 @@
         {
             "type": "keyword",
             "command": "multiple",
+            "title": "Test 4 - muitiple actions",
             "subtitle": "",
             "withspace": false,
             "arg_type": "no",
@@ -121,6 +122,81 @@
                             "modifiers": "normal",
                             "type": "notification",
                             "title": "Clipboard copied"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "keyword",
+            "command": "unavailable1",
+            "title": "Test 5 - Unavailable",
+            "subtitle": "",
+            "script": "",
+            "action": [
+                {
+                    "type": "keyword",
+                    "command": "",
+                    "title": "",
+                    "subtitle": "",
+                    "script": ""
+                }
+            ]
+        },
+        {
+            "type": "scriptfilter",
+            "command": "keywordwaiting",
+            "title": "Test 6 - keyword waiting test",
+            "subtitle": "",
+            "script_filter": "node scriptfilter.js",
+            "running_subtext": "",
+            "withspace": true,
+            "action": [
+                {
+                    "type": "keyword",
+                    "command": "",
+                    "title": "Title test",
+                    "subtitle": "",
+                    "script": "",
+                    "action": [
+                        {
+                            "type": "notification",
+                            "modifiers": "normal",
+                            "title": "Complete!",
+                            "text": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "hotkey",
+            "hotkey": "Double opt",
+            "title": "Test 6 - hotkey + action",
+            "action": [
+                {
+                    "type": "notification",
+                    "modifiers": "normal",
+                    "title": "Notif~",
+                    "text": "Subtitle~"
+                }
+            ]
+        },
+        {
+            "type": "hotkey",
+            "hotkey": "Double opt",
+            "action": [
+                {
+                    "type": "keyword",
+                    "title": "Test 7 - hotkey + keyword (keyword waiting 2)",
+                    "subtitle": "",
+                    "script": "",
+                    "action": [
+                        {
+                            "type": "notification",
+                            "modifiers": "normal",
+                            "title": "Comp!",
+                            "text": ""
                         }
                     ]
                 }
