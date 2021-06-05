@@ -1,0 +1,26 @@
+{
+  "name": "arvis-mock-workflow",
+  "version": "0.0.1",
+  "description": "Just mock data for Arvis",
+  "main": "createFile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "arvish build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jopemachine/arvis-mock-workflow.git"
+  },
+  "keywords": [
+    "arvis"
+  ],
+  "author": "jopemachine",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jopemachine/arvis-mock-workflow/issues"
+  },
+  "homepage": "https://github.com/jopemachine/arvis-mock-workflow#readme",
+  "devDependencies": {
+    "@jopemachine/arvish": "^0.1.6"
+  }
+}
