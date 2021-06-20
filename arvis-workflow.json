@@ -89,36 +89,41 @@
         {
             "type": "keyword",
             "command": "t4",
-            "title": "Test 4 - muitiple actions",
+            "title": "Test 4 - muitiple, async action chain",
             "subtitle": "",
             "argType": "no",
             "actions": [
                 {
                     "modifiers": "normal",
                     "type": "script",
-                    "script": "node createFile.js 'abc'",
+                    "script": "node script.js 'abc'",
                     "actions": [
                         {
                             "modifiers": "normal",
                             "type": "notification",
-                            "title": "File created"
+                            "title": "script ends 1!"
                         },
                         {
                             "modifiers": "normal",
-                            "type": "open",
-                            "target": "https://www.google.co.kr/"
+                            "type": "notification",
+                            "title": "script ends 2!"
+                        },
+                        {
+                            "type": "clipboard",
+                            "modifiers": "normal",
+                            "text": "Test 4 - muitiple, async action chain, result 2"
                         }
                     ]
                 },
                 {
                     "modifiers": "normal",
                     "type": "clipboard",
-                    "text": "def",
+                    "text": "Test 4 - muitiple, async action chain, result 1",
                     "actions": [
                         {
                             "modifiers": "normal",
                             "type": "notification",
-                            "title": "Test 4 - muitiple actions, result"
+                            "title": "Test 4 - muitiple, async action chain, result"
                         }
                     ]
                 }
