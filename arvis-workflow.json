@@ -197,9 +197,15 @@
             "title": "Test 8 - scriptFilter with withspace false",
             "subtitle": "",
             "scriptFilter": "node scriptFilter.js",
-            "runningSubtext": "a",
+            "runningSubtext": "",
             "withspace": false,
-            "actions": []
+            "actions": [
+                {
+                    "type": "clipboard",
+                    "modifiers": "normal",
+                    "text": "Test 8 - scriptFilter with withspace false, result"
+                }
+            ]
         },
         {
             "type": "scriptFilter",
@@ -207,7 +213,7 @@
             "title": "Test 9 - scriptFilter with argType",
             "subtitle": "",
             "scriptFilter": "node scriptFilter.js",
-            "runningSubtext": "a",
+            "runningSubtext": "",
             "withspace": true,
             "argType": "no",
             "actions": []
