@@ -3,23 +3,23 @@ console.log(
     {
       items: [
         {
-          title: "t1",
-          subtitle: "subtitle",
+          title: "scriptfilter item 1",
+          subtitle: "subtitle 1",
           arg: process.argv[2],
         },
         {
-          title: "t2",
-          subtitle: "subtitle",
+          title: "scriptfilter item 2",
+          subtitle: "subtitle 2",
           arg: process.argv[2],
         },
         {
-          title: "t3",
-          subtitle: "subtitle",
+          title: "scriptfilter item 3",
+          subtitle: "subtitle 3",
           arg: process.argv[2],
         },
         {
-          title: "t4",
-          subtitle: "subtitle",
+          title: "scriptfilter item 4",
+          subtitle: "subtitle 4",
           arg: process.argv[2],
         },
       ],

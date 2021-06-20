@@ -1,5 +1,5 @@
 {
-    "$schema": "./workflow-schema.json",
+    "$schema": "https://raw.githubusercontent.com/jopemachine/arvis-extension-validator/master/workflow-schema.json",
     "creator": "jopemachine",
     "name": "mock-workflow",
     "enabled": true,
@@ -7,21 +7,21 @@
         {
             "type": "keyword",
             "command": "t1",
-            "title": "Test 1 - keyword-script",
-            "subtitle": "",
+            "title": "Test 1 - keyword",
+            "subtitle": "mock-subtitle",
             "argType": "no",
             "actions": [
                 {
+                    "type": "clipboard",
                     "modifiers": "normal",
-                    "type": "script",
-                    "script": "node createFile.js"
+                    "text": "Test 1 - keyword, result"
                 }
             ]
         },
         {
             "type": "scriptFilter",
             "command": "t2",
-            "title": "Test 2 - scriptFilter + if",
+            "title": "Test 2 - scriptFilter",
             "scriptFilter": "node scriptFilter.js {query}",
             "runningSubtext": "Searching...",
             "withspace": true,
@@ -40,9 +40,9 @@
                                 "actions": {
                                     "then": [
                                         {
+                                            "type": "clipboard",
                                             "modifiers": "normal",
-                                            "type": "script",
-                                            "script": "node createFile.js {query}"
+                                            "text": "Test 2 - scriptFilter, result"
                                         }
                                     ]
                                 }
@@ -76,9 +76,9 @@
                             "withspace": true,
                             "actions": [
                                 {
+                                    "type": "clipboard",
                                     "modifiers": "normal",
-                                    "type": "script",
-                                    "script": "node createFile.js"
+                                    "text": "Test 3 - scriptFilter + scriptFilter, result"
                                 }
                             ]
                         }
@@ -118,7 +118,7 @@
                         {
                             "modifiers": "normal",
                             "type": "notification",
-                            "title": "Clipboard copied"
+                            "title": "Test 4 - muitiple actions, result"
                         }
                     ]
                 }
@@ -136,7 +136,8 @@
                     "command": "",
                     "title": "",
                     "subtitle": "",
-                    "script": ""
+                    "script": "",
+                    "actions": []
                 }
             ]
         },
@@ -177,10 +178,9 @@
                     "script": "",
                     "actions": [
                         {
-                            "type": "notification",
+                            "type": "clipboard",
                             "modifiers": "normal",
-                            "title": "Comp!",
-                            "text": ""
+                            "text": "Test 7 - hotkey + keyword (keyword waiting 2), result"
                         }
                     ]
                 }
@@ -205,8 +205,7 @@
             "runningSubtext": "a",
             "withspace": true,
             "argType": "no",
-            "actions": [
-            ]
+            "actions": []
         }
     ]
 }
