@@ -248,6 +248,26 @@
                     ]
                 }
             ]
+        },
+        {
+            "type": "scriptFilter",
+            "title": "Test u3 - scriptfilter with error",
+            "command": "u3",
+            "scriptFilter": "node scriptFilterWithError.js",
+            "runningSubtext": "Hold on a sec until script work is done...",
+            "argType": "optional",
+            "withspace": true,
+            "actions": []
+        },
+        {
+            "type": "scriptFilter",
+            "title": "Test u4 - scriptfilter with json error",
+            "command": "u4",
+            "scriptFilter": "node scriptFilterWithJsonError.js",
+            "runningSubtext": "Hold on a sec until script work is done...",
+            "argType": "optional",
+            "withspace": true,
+            "actions": []
         }
     ]
 }

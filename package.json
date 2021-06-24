@@ -21,6 +21,6 @@
   },
   "homepage": "https://github.com/jopemachine/arvis-mock-workflow#readme",
   "devDependencies": {
-    "arvish": "^0.1.5"
+    "arvish": "^0.1.16"
   }
 }
