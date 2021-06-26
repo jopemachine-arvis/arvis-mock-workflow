@@ -268,6 +268,27 @@
             "argType": "optional",
             "withspace": true,
             "actions": []
+        },
+        {
+            "type": "hotkey",
+            "hotkey": "Double Ctrl",
+            "actions": [
+                {
+                    "type": "scriptFilter",
+                    "title": "Test u5 - hotkey + scriptfilter",
+                    "scriptFilter": "node scriptfilter.js",
+                    "runningSubtext": "Hold on a sec until script work is done...",
+                    "argType": "optional",
+                    "withspace": true,
+                    "actions": [
+                        {
+                            "type": "clipboard",
+                            "modifiers": "normal",
+                            "text": "Test u5 - hotkey + scriptfilter, result"
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }

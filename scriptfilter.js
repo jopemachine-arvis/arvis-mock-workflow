@@ -6,6 +6,13 @@ console.log(
           title: "scriptfilter item 1",
           subtitle: "subtitle 1",
           arg: process.argv[2],
+          mods: {
+            ctrl: {
+              title: 'pressed ctrl',
+              subtitle: 'pressed ctrl subtitle'
+            },
+          },
+          quicklookurl: 'https://www.google.com/'
         },
         {
           title: "scriptfilter item 2",
