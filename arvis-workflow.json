@@ -4,7 +4,7 @@
     "name": "mock-workflow",
     "category": "arvis-development",
     "readme": "",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "webAddress": "https://github.com/jopemachine/arvis-mock-workflow",
     "enabled": true,
     "commands": [
