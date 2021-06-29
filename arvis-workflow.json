@@ -4,7 +4,7 @@
     "name": "mock-workflow",
     "category": "arvis-development",
     "readme": "",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "webAddress": "https://github.com/jopemachine/arvis-mock-workflow",
     "enabled": true,
     "commands": [
@@ -17,12 +17,12 @@
             "actions": [
                 {
                     "type": "keyword",
-                    "title": "Test 1 - keyword",
+                    "title": "a1",
                     "argType": "optional",
                     "actions": [
                         {
                             "type": "keyword",
-                            "title": "Test 1 - keyword",
+                            "title": "a1",
                             "argType": "no",
                             "actions": [
                                 {

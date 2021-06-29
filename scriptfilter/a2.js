@@ -4,7 +4,7 @@ const items = [
     {
         title: 't1',
         subtitle: 't1',
-        arg: 't1',
+        arg: 't1 ' + arvish.input,
         quicklookurl: 't1',
     },
     {
