@@ -4,7 +4,9 @@
   "description": "Just mock data for Arvis",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "arvish build"
+    "build": "arvish build",
+    "postinstall": "arvish-init",
+    "preuninstall": "arvish-cleanup"
   },
   "repository": {
     "type": "git",
@@ -12,6 +14,7 @@
   },
   "keywords": [
     "arvis",
+    "arvis-test",
     "arvis-workflow"
   ],
   "author": "jopemachine",
@@ -20,7 +23,7 @@
     "url": "https://github.com/jopemachine/arvis-mock-workflow/issues"
   },
   "homepage": "https://github.com/jopemachine/arvis-mock-workflow#readme",
-  "devDependencies": {
-    "arvish": "^0.1.16"
+  "dependencies": {
+    "arvish": ">=0.3.3"
   }
 }
