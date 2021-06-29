@@ -1,6 +1,6 @@
 {
   "name": "arvis-mock-workflow",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Just mock data for Arvis",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
